@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "891117544781",
+    "firebase_url": "https://qtrove-af2fd.firebaseio.com",
+    "project_id": "qtrove-af2fd",
+    "storage_bucket": "qtrove-af2fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891117544781:android:361eea6eb4ee5b45",
+        "android_client_info": {
+          "package_name": "com.marmeto.user.qtrove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891117544781-n2t6japqr0g0osiab280btutlk1qhh7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVbaZEWnmVKh7a2SgAOfPUCWZgg5_8nXw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

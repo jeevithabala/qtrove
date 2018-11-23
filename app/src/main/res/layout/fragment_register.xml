@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentication.EmailLoginFragment"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="Register"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DEDEDE" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_edit_gray"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Welcome"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Your Email id is not registered with us please enter your details to login"
+            android:textColor="#a1a1a1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="PASSWORD"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#006F6A"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Create a password"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_edit_gray"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="FULLNAME"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#006F6A"
+            />
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_edit_gray"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="BIRTHDATE"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="#006F6A"
+                />
+
+            <EditText
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_birth"
+                android:hint="Select your birth date"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_edit_gray"
+                />
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/birthday"
+                android:layout_marginTop="10dp"
+                android:text="GENDER"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="#006F6A"
+                />
+
+            <EditText
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_gender"
+                android:layout_toRightOf="@+id/birthday"
+                android:text="M"
+                android:editable="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/rounded_edit_gray"
+                />
+
+            <EditText
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_gender"
+                android:layout_toRightOf="@+id/male"
+                android:editable="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="F"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_edit_gray"
+                />
+        </RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#fff"
+            android:background="#006F6A"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
