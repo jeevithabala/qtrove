@@ -96,7 +96,7 @@
                     android:textSize="15dp" />
 
                 <TextView
-                    android:id="@+id/star"
+                    android:id="@+id/star_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/price"
@@ -1110,8 +1110,6 @@ deliver to you"
 
             </RelativeLayout>
 
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1119,7 +1117,7 @@ deliver to you"
                 android:background="#fff">
 
                 <TextView
-                    android:id="@+id/review_header"
+                    android:id="@+id/review_header1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -1133,31 +1131,151 @@ deliver to you"
                     android:id="@+id/rating_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/review_header"
-                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/review_header1"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
                     android:text="4.3"
                     android:textColor="#000"
-                    android:textSize="75dp"/>
+                    android:textSize="75dp" />
+
+                <TextView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_alignTop="@+id/rating_text"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/rating_text"
+                    android:background="@drawable/star_5" />
+
+                <TextView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_below="@+id/star5"
+                    android:layout_alignStart="@+id/star5"
+                    android:layout_alignLeft="@+id/star5"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/star_4" />
+
+                <TextView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_below="@+id/star4"
+                    android:layout_alignStart="@+id/star5"
+                    android:layout_alignLeft="@+id/star5"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/star_3" />
+
+                <TextView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_below="@+id/star3"
+                    android:layout_alignStart="@+id/star5"
+                    android:layout_alignLeft="@+id/star5"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/star_2" />
+
+                <TextView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_below="@+id/star2"
+                    android:layout_alignStart="@+id/star5"
+                    android:layout_alignLeft="@+id/star5"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/star_1" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignTop="@+id/rating_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/star5"
+                    android:max="100"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/rounded_progress_bar" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBar5"
+                    android:layout_alignStart="@+id/progressBar5"
+                    android:layout_alignLeft="@+id/progressBar5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/rounded_progress_bar" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/progressBar4"
+                    android:layout_alignStart="@+id/progressBar4"
+                    android:layout_alignLeft="@+id/progressBar4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:max="100"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/rounded_progress_bar" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/progressBar3"
+                    android:layout_alignStart="@+id/progressBar3"
+                    android:layout_alignLeft="@+id/progressBar3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:max="100"
+                    android:progress="60"
+                    android:progressDrawable="@drawable/rounded_progress_bar" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/progressBar2"
+                    android:layout_alignStart="@+id/progressBar2"
+                    android:layout_alignLeft="@+id/progressBar2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/rounded_progress_bar" />
+
 
                 <TextView
                     android:id="@+id/review_and_rating_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="23 reviews 23412 ratings"
+                    android:layout_below="@+id/rating_text"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@+id/rating_text"
-                    />
+                    android:text="23 reviews 23412 ratings" />
 
                 <TextView
-                    android:id="@+id/star_1"
+                    android:id="@+id/star_reviewer_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/review_and_rating_text"
                     android:layout_alignStart="@+id/review_and_rating_text"
-                    android:background="@drawable/rounded_star_green"
                     android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_star_green"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:text="4.5 *"
@@ -1168,79 +1286,73 @@ deliver to you"
                     android:id="@+id/reviewer_name1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Edmond"
-                    android:textColor="#000"
-                    android:textStyle="bold"
+                    android:layout_below="@+id/star_reviewer_1"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@+id/star_1"
-                    />
+                    android:text="Edmond"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/reviewer_time1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1 month ago"
-                    android:layout_marginLeft="20dp"
                     android:layout_below="@+id/reviewer_name1"
-                    />
+                    android:layout_marginLeft="20dp"
+                    android:text="1 month ago" />
 
                 <TextView
                     android:id="@+id/reviewer_comment1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/review_and_rating_text"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/star_reviewer_1"
                     android:text="This is What You Want"
                     android:textColor="#000"
-                    android:textStyle="bold"
                     android:textSize="18dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_below="@+id/review_and_rating_text"
-                    android:layout_toRightOf="@+id/star_1"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/reviewer_text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ok. I went through Bose, Beats, Audia Technica, Sony, Sennheiser, and finally arrived at these"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignStart="@+id/reviewer_comment1"
                     android:layout_below="@+id/reviewer_comment1"
-                    />
+                    android:layout_alignStart="@+id/reviewer_comment1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Ok. I went through Bose, Beats, Audia Technica, Sony, Sennheiser, and finally arrived at these" />
 
                 <TextView
                     android:id="@+id/readmore_text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/read_more"
+                    android:layout_below="@+id/reviewer_text1"
+                    android:layout_alignStart="@+id/reviewer_text1"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
-                    android:layout_alignStart="@+id/reviewer_text1"
-                    android:layout_below="@+id/reviewer_text1"
-                    />
+                    android:text="@string/read_more" />
 
                 <View
                     android:id="@+id/review_view_line1"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_below="@+id/readmore_text1"
-                    android:background="#707070"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp"
-                    />
+                    android:background="#707070" />
 
                 <TextView
-                    android:id="@+id/star_2"
+                    android:id="@+id/star_reviewer_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/review_view_line1"
                     android:layout_alignStart="@+id/review_and_rating_text"
-                    android:background="@drawable/rounded_star_green"
                     android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_star_green"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:text="4.5 *"
@@ -1251,106 +1363,100 @@ deliver to you"
                     android:id="@+id/reviewer_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Edmond"
-                    android:textColor="#000"
-                    android:textStyle="bold"
+                    android:layout_below="@+id/star_reviewer_2"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@+id/star_2"
-                    />
+                    android:text="Edmond"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/reviewer_time2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1 month ago"
-                    android:layout_marginLeft="20dp"
                     android:layout_below="@+id/reviewer_name2"
-                    />
+                    android:layout_marginLeft="20dp"
+                    android:text="1 month ago" />
 
                 <TextView
                     android:id="@+id/reviewer_comment2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/review_view_line1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/star_reviewer_2"
                     android:text="This is What You Want"
                     android:textColor="#000"
-                    android:textStyle="bold"
                     android:textSize="18dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_below="@+id/review_view_line1"
-                    android:layout_toRightOf="@+id/star_2"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/reviewer_text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ok. I went through Bose, Beats, Audia Technica, Sony, Sennheiser, and finally arrived at these"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignStart="@+id/reviewer_comment2"
                     android:layout_below="@+id/reviewer_comment2"
-                    />
+                    android:layout_alignStart="@+id/reviewer_comment2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Ok. I went through Bose, Beats, Audia Technica, Sony, Sennheiser, and finally arrived at these" />
 
                 <TextView
                     android:id="@+id/readmore_text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/read_more"
+                    android:layout_below="@+id/reviewer_text2"
+                    android:layout_alignStart="@+id/reviewer_text2"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
-                    android:layout_alignStart="@+id/reviewer_text2"
-                    android:layout_below="@+id/reviewer_text2"
-                    />
+                    android:text="@string/read_more" />
 
                 <View
                     android:id="@+id/review_view_line2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_below="@+id/readmore_text2"
-                    android:background="#707070"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp"
-                    />
+                    android:background="#707070" />
 
                 <LinearLayout
                     android:id="@+id/btn_write"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/review_view_line2"
-                    android:background="@drawable/transparent_rec"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:orientation="horizontal" >
+                    android:background="@drawable/transparent_rec"
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/write"
-                        android:layout_marginTop="18dp"
                         android:layout_marginLeft="30dp"
-                        />
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/write" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="11dp"
-                        android:text="@string/write"/>
+                        android:text="@string/write" />
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/more_review_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/more_review"
-                    android:layout_marginTop="32dp"
+                    android:layout_below="@+id/review_view_line2"
                     android:layout_marginLeft="50dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginRight="20dp"
                     android:layout_toRightOf="@+id/btn_write"
-                    android:layout_below="@+id/review_view_line2"
-                    />
+                    android:text="@string/more_review" />
 
 
             </RelativeLayout>
